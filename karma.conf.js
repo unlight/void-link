@@ -1,12 +1,10 @@
-import { Config, FilePattern } from 'karma';
-import { Configuration } from 'webpack';
-import * as path from 'path';
-import * as webpackConfig from './webpack.config';
+const { Configuration } = require('webpack');
+const path = require('path');
+const webpackConfig =  require('./webpack.config');
 
-export default (config: any) => {
+module.exports = (config) => {
 
-    const karma: Config = config;
-    const files: FilePattern[] = [
+    const files = [
         { pattern: 'src/index.spec.ts' },
     ];
     const webpackOptions = { hmr: false, test: true, coverage: false };

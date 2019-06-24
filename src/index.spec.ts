@@ -1,10 +1,7 @@
 /* eslint-disable @typescript-eslint/tslint/config */
-import * as lib from './index';
+import './index';
 
 it('smoke', () => {
-    expect(true).toBeTruthy();
+    const voidLink = customElements.get('void-link');
+    expect(voidLink).toBeDefined();
 });
-
-// it('hello test', () => {
-//     expect(lib.hello()).toBe('Hello world');
-// });
