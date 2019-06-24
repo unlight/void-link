@@ -1,5 +1,5 @@
 {
-  "name": "node-package-starter",
+  "name": "void-link",
   "version": "0.0.0-dev",
   "license": "MIT",
   "description": "",
@@ -9,9 +9,6 @@
   "keywords": [],
   "engines": {
     "node": ">=6"
-  },
-  "repository": {
-    "type": "git"
   },
   "scripts": {
     "test": "npm run eslint && npm run tscheck && npm run test:cov && npm run typecov",
@@ -100,5 +97,14 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unlight/void-link.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unlight/void-link/issues"
+  },
+  "homepage": "https://github.com/unlight/void-link#readme"
 }

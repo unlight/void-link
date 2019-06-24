@@ -44,7 +44,7 @@ module.exports = (config) => {
             },
             remapCoverageReporter: {
                 text: null,
-                html: `${testResultsOutput}/coverage`
+                // html: `${testResultsOutput}/coverage`
             },
         });
     } else {

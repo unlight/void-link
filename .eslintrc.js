@@ -2,8 +2,8 @@ module.exports = {
     "root": true,
     "env": {
         "node": true,
-        "jest": true,
-        "jest/globals": true,
+        "browser": true,
+        "jasmine": true,
     },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -18,7 +18,6 @@ module.exports = {
         "wix-editor",
         "unicorn",
         "import",
-        "jest",
         "@typescript-eslint/tslint",
         "only-warn",
     ],
@@ -28,7 +27,6 @@ module.exports = {
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/typescript",
-        "plugin:jest/recommended",
     ],
     "rules": {
         "quotes": [1, "single", { "allowTemplateLiterals": true }],
