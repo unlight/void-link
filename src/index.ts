@@ -1,8 +1,4 @@
-customElements.define('void-link', class VoidLinkElement extends HTMLElement {
-
-    static get observedAttributes() {
-        return [];
-    }
+customElements.define('void-link', class VoidLinkElement extends HTMLAnchorElement {
 
     /**
      * Invoked each time the custom element is appended into a document-connected element.
@@ -10,13 +6,6 @@ customElements.define('void-link', class VoidLinkElement extends HTMLElement {
      * have been fully parsed
      */
     connectedCallback() {
-        this.innerHTML = `<h4>Home</h4>
-        <p>
-            <a href="#/home/feature1">Feature 1</a>
-            <a href="#/home/feature2">Feature 2</a>
-        </p>
-        <div data-role="outlet">Home routes</div>
-        `;
     }
 
     /**
@@ -34,4 +23,4 @@ customElements.define('void-link', class VoidLinkElement extends HTMLElement {
 
     }
 
-});
+}, { extends: 'a' });
