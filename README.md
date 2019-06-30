@@ -1,4 +1,5 @@
 # void-link
+Web component extends HTMLAnchorElement. Prevent click if `href` is empty.
 
 ## Why?
 When you have `<a href="#">dummy click</a>` it scrolls you to top.  
